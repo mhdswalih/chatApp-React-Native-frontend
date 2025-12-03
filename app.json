@@ -1,13 +1,15 @@
 {
   "expo": {
-    "name": "chatApp",
+    "name": "Chatapp",
     "slug": "chatApp",
     "version": "1.0.0",
     "orientation": "portrait",
+
     "icon": "./assets/images/splashImage.png",
+
     "scheme": "chatapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
 
     "ios": {
       "supportsTablet": true
@@ -19,8 +21,9 @@
         "foregroundImage": "./assets/images/splashImage.png",
         "backgroundColor": "#E6F4FE"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
 
     "web": {
@@ -33,28 +36,27 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow chatApp to access your photos",
-          "cameraPermission": "Allow chatApp to access your camera"
+          "photosPermission": "Allow Chatapp to access your photos",
+          "cameraPermission": "Allow Chatapp to access your camera"
         }
       ],
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splashImage.png",
-          "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "backgroundColor": "#ffffff"
         }
       ],
       "expo-web-browser"
     ],
 
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+
+    "updates": {
+      "url": "https://u.expo.dev/003ff093-10c2-42bc-bdae-33304a365a23"
     },
 
     "extra": {
