@@ -4,33 +4,31 @@
     "slug": "chatApp",
     "version": "1.0.0",
     "orientation": "portrait",
-
-    "icon": "./assets/images/splashImage.png",
-
+    "icon": "./assets/images/icon.png",
     "scheme": "chatapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": false,
-
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.swalihmc.chatapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
-
     "android": {
       "package": "com.swalihmc.chatapp",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/splashImage.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#E6F4FE"
       },
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ]
     },
-
     "web": {
       "output": "static",
-      "favicon": "./assets/images/splashImage.png"
+      "favicon": "./assets/images/icon.png"
     },
-
     "plugins": [
       "expo-router",
       [
@@ -50,15 +48,12 @@
       ],
       "expo-web-browser"
     ],
-
     "runtimeVersion": {
       "policy": "appVersion"
     },
-
     "updates": {
       "url": "https://u.expo.dev/003ff093-10c2-42bc-bdae-33304a365a23"
     },
-
     "extra": {
       "router": {},
       "eas": {
